@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_06_19_005109) do
+ActiveRecord::Schema.define(version: 2020_06_20_174337) do
 
   create_table "coffe_sales", force: :cascade do |t|
     t.string "blend_name"
@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_06_19_005109) do
     t.datetime "date_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "origin"
   end
 
 end

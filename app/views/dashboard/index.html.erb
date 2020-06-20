@@ -1,2 +1,6 @@
-<h1>Dashboard#index</h1>
-<p>Find me in app/views/dashboard/index.html.erb</p>
+<h1>Coffee Sales</h1>
+<h2>Ventas por Mes</h2>
+<%= area_chart @sales_grouped_by_month %>
+
+<h2>Cantidad de Ventas por Mes</h2>
+<%= column_chart @quantity_sales_by_month %>
