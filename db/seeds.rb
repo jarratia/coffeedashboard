@@ -6,5 +6,5 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 1000.times do
-    CoffeSale.create(blend_name: Faker::Coffee.blend_name, amount: rand(1990..5490), date_time: Faker::Date.between(3.year.ago, Date.today))
+    CoffeSale.create(blend_name: Faker::Coffee.blend_name, amount: rand(1990..5490), date_time: Faker::Date.between(3.year.ago, Date.today), origin: Faker::Coffee.origin)
 end
